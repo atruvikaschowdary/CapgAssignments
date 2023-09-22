@@ -1,12 +1,9 @@
-package strpac2;
+package pac1;
 
 import java.util.Objects;
 
-
-
-
 public class Account {
-	
+
 	private int accountNumber;
 
 	private String accountHolderName;
@@ -14,10 +11,6 @@ public class Account {
 	private int balance;
 
 	private String location;
-
- 
-
- 
 
 	public Account(int accountNumber, String accountHolderName, int balance, String location) {
 
@@ -33,23 +26,11 @@ public class Account {
 
 	}
 
- 
-
- 
-
- 
-
 	public int getAccountNumber() {
 
 		return accountNumber;
 
 	}
-
- 
-
- 
-
- 
 
 	public void setAccountNumber(int accountNumber) {
 
@@ -57,23 +38,11 @@ public class Account {
 
 	}
 
- 
-
- 
-
- 
-
 	public String getAccountHolderName() {
 
 		return accountHolderName;
 
 	}
-
- 
-
- 
-
- 
 
 	public void setAccountHolderName(String accountHolderName) {
 
@@ -81,23 +50,11 @@ public class Account {
 
 	}
 
- 
-
- 
-
- 
-
 	public int getBalance() {
 
 		return balance;
 
 	}
-
- 
-
- 
-
- 
 
 	public void setBalance(int balance) {
 
@@ -105,35 +62,17 @@ public class Account {
 
 	}
 
- 
-
- 
-
- 
-
 	public String getLocation() {
 
 		return location;
 
 	}
 
- 
-
- 
-
- 
-
 	public void setLocation(String location) {
 
 		this.location = location;
 
 	}
-
- 
-
- 
-
- 
 
 	@Override
 
@@ -142,12 +81,6 @@ public class Account {
 		return Objects.hash(accountHolderName, accountNumber, balance, location);
 
 	}
-
- 
-
- 
-
- 
 
 	@Override
 
@@ -169,15 +102,9 @@ public class Account {
 
 		return Objects.equals(accountHolderName, other.accountHolderName) && accountNumber == other.accountNumber
 
-&& balance == other.balance && Objects.equals(location, other.location);
+				&& balance == other.balance && Objects.equals(location, other.location);
 
 	}
-
- 
-
- 
-
- 
 
 	@Override
 
@@ -188,7 +115,5 @@ public class Account {
 				+ balance + ", location=" + location + "]";
 
 	}
-
- 
 
 }
